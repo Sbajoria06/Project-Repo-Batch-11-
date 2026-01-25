@@ -1,0 +1,10 @@
+pydub
+librosa
+numpy
+soundfile
+scipy
+openai-whisper
+nltk
+scikit-learn
+sentence-transformers
+torch
