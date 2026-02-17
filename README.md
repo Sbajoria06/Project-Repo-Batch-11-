@@ -75,7 +75,7 @@ from each transcript line.
 
 ###  Overall Architecture Flow
 
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/43c765b5-ca39-44e4-b895-cc2d8d796240" />
+<img width="600" height="800" alt="image" src="https://github.com/user-attachments/assets/43c765b5-ca39-44e4-b895-cc2d8d796240" />
 
 
 ##  4. Tools and Libraries Used
@@ -598,6 +598,7 @@ Based on testing results and user feedback, the following improvements were impl
 **Author**
 
 Shambhavi Bajoria
+
 
 
 
