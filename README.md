@@ -225,7 +225,6 @@ The complete transcript of each podcast episode is generated using Whisper.
 - Contains timestamped speech segments
 - Preserves chronological flow
 - Enables time-based navigation
-<img width="887" height="647" alt="image" src="https://github.com/user-attachments/assets/8339a113-f02b-428f-a049-bdcddcea77d9" />
 
 
 ## Topic Segments
@@ -237,7 +236,6 @@ Each segment includes:
 - Title (generated from key nouns)
 - Start and end timestamps
 - Full segment text
-<img width="1420" height="679" alt="image" src="https://github.com/user-attachments/assets/f666727c-8756-4451-a224-614fdb9a2403" />
 
 
 ## Interactive Timeline
@@ -247,7 +245,6 @@ Using extracted timestamps, each segment is mapped to its corresponding time ran
 - Displays start and end time for each topic
 - Enables navigation based on time
 - Helps users jump directly to specific sections
-<img width="1854" height="169" alt="image" src="https://github.com/user-attachments/assets/ef69b701-c2e8-48d9-b9db-7bb80ffb08e8" />
 
 ## Keyword Cloud
 
@@ -269,7 +266,10 @@ The system interface displays:
 
 ## 7. Testing and Feedback
 
-<img width="1854" height="169" alt="image" src="https://github.com/user-attachments/assets/7bc4a9db-e52e-4c34-934a-81edd25695e4" />
+Podcast	   Issue Identified   	Corrective Action Taken
+Episode 1	 Over-segmentation	  Adjusted similarity threshold
+Episode 2	 Irrelevant keywords	Improved stopword filtering
+Episode 3	 Short summaries	    Increased MIN_WORDS value
 
 ##User Feedback Summary
 
@@ -282,20 +282,46 @@ Improvements were made accordingly.
 
 ## 8. Limitations
 
--Transcription accuracy depends on audio clarity.
--Background noise affects recognition.
--Segmentation threshold may not generalize to all podcast styles.
--Sentiment analysis is lexicon-based and not fully context-aware.
--Extractive summaries may miss deeper semantic meaning.
+Despite achieving the core objectives, the system has certain limitations:
+
+- **Transcription Accuracy Dependency**  
+  The accuracy of generated transcripts depends heavily on the clarity and quality of the input audio.
+
+- **Sensitivity to Background Noise**  
+  Background noise, overlapping speech, or unclear pronunciation may reduce speech recognition performance.
+
+- **Segmentation Threshold Generalization**  
+  The cosine similarity threshold used for topic segmentation may not generalize equally well across all podcast styles or genres.
+
+- **Lexicon-Based Sentiment Analysis**  
+  VADER sentiment analysis is rule-based and may not fully capture contextual or sarcastic expressions.
+
+- **Extractive Summarization Limitation**  
+  Since summaries are generated using an extractive TF-IDF approach, they may not always capture deeper semantic meaning or contextual nuances.
+
+---
 
 ## 9. Future Work
 
--Use more advanced speech recognition models.
--Implement real-time transcription.
--Add speaker identification.
--Improve segmentation using topic modeling.
--Enhance user interface features.
--Deploy system on cloud infrastructure.
+The system can be further enhanced in the following ways:
+
+- **Advanced Speech Recognition Models**  
+  Integrate more advanced or domain-specific speech recognition models to improve transcription accuracy.
+
+- **Real-Time Transcription**  
+  Extend the system to support real-time or streaming transcription for live podcasts.
+
+- **Speaker Identification**  
+  Implement speaker diarization to differentiate between multiple speakers within an episode.
+
+- **Improved Topic Segmentation**  
+  Use advanced topic modeling techniques such as LDA or transformer-based models for more accurate segmentation.
+
+- **Enhanced User Interface**  
+  Improve UI design with advanced navigation features, search functionality, and better visualization components.
+
+- **Cloud Deployment**  
+  Deploy the system on cloud infrastructure to support scalability and multi-user access.
 
 
 
@@ -633,6 +659,7 @@ Based on testing results and user feedback, the following improvements were impl
 **Author**
 
 Shambhavi Bajoria
+
 
 
 
