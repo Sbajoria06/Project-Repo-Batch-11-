@@ -131,16 +131,6 @@ TF-IDF vectorization was used for:
 VADER was used to classify sentiment at the segment level.  
 It provides a compound score that was used to label segments as Positive, Negative, or Neutral.
 
-###  Visualization
-
-#### WordCloud
-
-WordCloud was used to visually represent frequently occurring keywords across segments, making topic trends easier to interpret.
-
-#### Matplotlib
-
-Matplotlib was used to generate graphical representations such as keyword distributions and other visual outputs.
-
 ###  User Interface
 
 The project includes a structured output system where:
@@ -631,6 +621,7 @@ Based on testing results and user feedback, the following improvements were impl
 **Author**
 
 Shambhavi Bajoria
+
 
 
 
