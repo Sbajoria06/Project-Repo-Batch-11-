@@ -196,7 +196,7 @@ Whisper was used to generate timestamped transcripts from podcast audio.
 🔹 Topic Segmentation
 Sentence embeddings were generated.
 
-Cosine similarity computed between adjacent sentences.
+🔹 Cosine similarity computed between adjacent sentences.
 Topic boundaries identified where similarity drops below threshold.
 
 🔹 Summary Generation
@@ -659,6 +659,7 @@ Based on testing results and user feedback, the following improvements were impl
 **Author**
 
 Shambhavi Bajoria
+
 
 
 
